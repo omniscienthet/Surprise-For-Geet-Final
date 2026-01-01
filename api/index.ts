@@ -1,17 +1,8 @@
-import { app, setupApp } from '../dist/index.js';
-
-let isReady = false;
+import { app, setupApp } from "../server/index";
 
 export default async function handler(req, res) {
-  if (!isReady) {
-    try {
-      await setupApp();
-      isReady = true;
-    } catch (err) {
-      console.error("Failed to start server:", err);
-      return res.status(500).json({ error: "Server failed to start", details: err.message });
-    }
-  }
-  
+  // Ensure the app is initialized
+  await setupApp();
+  // Pass the request to Express
   app(req, res);
 }
