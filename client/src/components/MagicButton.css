@@ -1,0 +1,21 @@
+.magic-button {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.magic-particle {
+  will-change: transform, opacity;
+}
+
+.magic-particle::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: rgba(0, 26, 26, 0.2);
+  border-radius: 50%;
+  z-index: -1;
+}

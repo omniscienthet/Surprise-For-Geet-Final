@@ -1,0 +1,23 @@
+# NOT\_FOUND
+
+The `NOT_FOUND` error occurs when a requested resource could not be found. This might happen if the resource has been moved, deleted, or if there is a typo in the URL.
+
+404
+
+NOT\_FOUND:
+
+Not Found
+
+## [Troubleshoot](#troubleshoot)
+
+I'm encountering an error and reviewing the docs at /docs/errors/NOT\_FOUND to understand what's happening. Please help me resolve this by: 1. \*\*Suggest the fix\*\*: Analyze my codebase context and propose what needs to be changed to resolve this error 2. \*\*Explain the root cause\*\*: Break down why this error occurred: - What was the code actually doing vs. what it needed to do? - What conditions triggered this specific error? - What misconception or oversight led to this? 3. \*\*Teach the concept\*\*: Help me understand the underlying principle: - Why does this error exist and what is it protecting me from? - What's the correct mental model for this concept? - How does this fit into the broader framework/language design? 4. \*\*Show warning signs\*\*: Help me recognize this pattern in the future: - What should I look out for that might cause this again? - Are there similar mistakes I might make in related scenarios? - What code smells or patterns indicate this issue? 5. \*\*Discuss alternatives\*\*: Explain if there are different valid approaches and their trade-offs My goal is to fix the immediate issue while building lasting understanding so I can avoid and resolve similar errors independently in the future.
+
+[Open in Cursor](https://cursor.com/link/prompt?text=I%27m+encountering+an+error+and+reviewing+the+docs+at+https%3A%2F%2Fvercel.com%2Fdocs%2Ferrors%2FNOT_FOUND+to+understand+what%27s+happening.%0A%0APlease+help+me+resolve+this+by%3A%0A%0A1.+**Suggest+the+fix**%3A+Analyze+my+codebase+context+and+propose+what+needs+to+be+changed+to+resolve+this+error%0A2.+**Explain+the+root+cause**%3A+Break+down+why+this+error+occurred%3A%0A+++-+What+was+the+code+actually+doing+vs.+what+it+needed+to+do%3F%0A+++-+What+conditions+triggered+this+specific+error%3F%0A+++-+What+misconception+or+oversight+led+to+this%3F%0A3.+**Teach+the+concept**%3A+Help+me+understand+the+underlying+principle%3A%0A+++-+Why+does+this+error+exist+and+what+is+it+protecting+me+from%3F%0A+++-+What%27s+the+correct+mental+model+for+this+concept%3F%0A+++-+How+does+this+fit+into+the+broader+framework%2Flanguage+design%3F%0A4.+**Show+warning+signs**%3A+Help+me+recognize+this+pattern+in+the+future%3A%0A+++-+What+should+I+look+out+for+that+might+cause+this+again%3F%0A+++-+Are+there+similar+mistakes+I+might+make+in+related+scenarios%3F%0A+++-+What+code+smells+or+patterns+indicate+this+issue%3F%0A5.+**Discuss+alternatives**%3A+Explain+if+there+are+different+valid+approaches+and+their+trade-offs%0A%0AMy+goal+is+to+fix+the+immediate+issue+while+building+lasting+understanding+so+I+can+avoid+and+resolve+similar+errors+independently+in+the+future.)
+
+To troubleshoot this error, follow these steps:
+
+1.  Check the deployment URL: Ensure that the deployment URL you are using is correct and does not contain any typos or incorrect paths
+2.  Check deployment existence: Verify that the [deployment exists](/docs/projects/project-dashboard#deployments) and has not been deleted
+3.  Review deployment logs: If the deployment exists, review the [deployment logs](/docs/deployments/logs) to identify any issues that might have caused the deployment to be unavailable
+4.  Verify permissions: Ensure you have the necessary [permissions](/docs/accounts/team-members-and-roles) to access the deployment
+5.  Contact support: If you've checked the above and are still unable to resolve the issue, [contact support](/help#issues) for further assistance
