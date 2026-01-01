@@ -26,12 +26,12 @@ async function setupApp() {
   } else {
     serveStatic(app);
   }
-
+  
   return server;
 }
 
 // Only start listening on a port if WE ARE NOT ON VERCEL.
-// Vercel sets the 'VERCEL' environment variable.
+// Vercel automatically sets the 'VERCEL' environment variable.
 if (!process.env.VERCEL) {
   (async () => {
     const server = await setupApp();
