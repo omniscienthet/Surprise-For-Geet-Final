@@ -8,9 +8,9 @@ if (!process.env.DATABASE_URL) {
   );
 }
 
-// Simplify connection to be robust against special characters in passwords
 export const pool = new pg.Pool({
   connectionString: process.env.DATABASE_URL,
+  ssl: { rejectUnauthorized: false }, // Required for Supabase/Vercel
 });
 
 export const db = drizzle(pool, { schema });
